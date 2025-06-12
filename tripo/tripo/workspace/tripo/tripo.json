@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"5xjBfNGB7i\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Company\",\"col\":3}},{\"id\":\"DOYp3-Dh_y\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Customer\",\"col\":3}},{\"id\":\"sdkw9aJTN3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Driver\",\"col\":3}},{\"id\":\"_sxOOCjc4D\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip\",\"col\":3}}]",
+ "content": "[{\"id\":\"5xjBfNGB7i\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Company\",\"col\":3}},{\"id\":\"DOYp3-Dh_y\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Customer\",\"col\":3}},{\"id\":\"sdkw9aJTN3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Driver\",\"col\":3}},{\"id\":\"_sxOOCjc4D\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip\",\"col\":3}},{\"id\":\"1nvN2nd3BG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Company User Mapping\",\"col\":3}}]",
  "creation": "2025-06-12 10:25:23.061770",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Tripo",
  "links": [],
- "modified": "2025-06-12 12:07:52.251207",
+ "modified": "2025-06-12 17:52:29.512606",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Tripo",
@@ -25,6 +25,14 @@
  "roles": [],
  "sequence_id": 1.0,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Trip Company User Mapping",
+   "link_to": "Trip Company User Mapping",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
   {
    "color": "Grey",
    "doc_view": "List",

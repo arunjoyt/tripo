@@ -241,12 +241,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
-fixtures = [
-    {
-        "doctype" : "Role",
-        "filters" : {
-            "name" : ["in", ["Trip Coordinator"]]
-        }
-    }
-]
