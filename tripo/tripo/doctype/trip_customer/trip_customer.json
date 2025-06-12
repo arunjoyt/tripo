@@ -7,6 +7,7 @@
  "field_order": [
   "customer_name",
   "customer_address",
+  "customer_phone",
   "trip_company",
   "trip_company_name"
  ],
@@ -19,6 +20,7 @@
    "reqd": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "customer_address",
    "fieldtype": "Data",
    "label": "Customer Address"
@@ -35,12 +37,18 @@
    "fieldtype": "Data",
    "label": "Trip Company Name",
    "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "customer_phone",
+   "fieldtype": "Phone",
+   "label": "Customer Phone"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-12 15:47:14.195590",
+ "modified": "2025-06-12 17:07:30.267867",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip Customer",
@@ -72,6 +80,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "row_format": "Dynamic",
  "search_fields": "customer_name, customer_address",
  "sort_field": "modified",

@@ -7,8 +7,18 @@
  "field_order": [
   "section_break_wmuv",
   "customer",
+  "customer_name",
+  "customer_address",
+  "round_trip__one_way",
   "pickup_location",
   "destination",
+  "trip_date",
+  "trip_time",
+  "trip_status",
+  "trip_driver",
+  "trip_driver_name",
+  "trip_summary",
+  "comments",
   "trip_company",
   "trip_company_name",
   "amended_from"
@@ -56,13 +66,72 @@
    "fieldtype": "Link",
    "label": "Customer",
    "options": "Trip Customer"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.customer_address",
+   "fieldname": "customer_address",
+   "fieldtype": "Data",
+   "label": "Customer Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "round_trip__one_way",
+   "fieldtype": "Select",
+   "label": "Round Trip / One Way",
+   "options": "Round Trip\nOne Way"
+  },
+  {
+   "fieldname": "trip_date",
+   "fieldtype": "Date",
+   "label": "Trip Date"
+  },
+  {
+   "fieldname": "trip_time",
+   "fieldtype": "Time",
+   "label": "Trip Time"
+  },
+  {
+   "fieldname": "trip_status",
+   "fieldtype": "Select",
+   "label": "Trip Status",
+   "options": "Booked\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "trip_driver",
+   "fieldtype": "Link",
+   "label": "Trip Driver",
+   "options": "Trip Driver"
+  },
+  {
+   "fetch_from": "trip_driver.driver_name",
+   "fieldname": "trip_driver_name",
+   "fieldtype": "Data",
+   "label": "Trip Driver Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "trip_summary",
+   "fieldtype": "HTML",
+   "label": "Trip Summary"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-12 15:52:00.657318",
+ "modified": "2025-06-12 17:03:59.429842",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip",
