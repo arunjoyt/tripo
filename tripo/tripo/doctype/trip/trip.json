@@ -1,17 +1,17 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "hash",
  "creation": "2025-06-12 10:28:08.496121",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_wmuv",
-  "amended_from",
+  "customer",
   "pickup_location",
   "destination",
   "trip_company",
-  "trip_company_name"
+  "trip_company_name",
+  "amended_from"
  ],
  "fields": [
   {
@@ -50,13 +50,19 @@
    "fieldtype": "Data",
    "label": "Trip Company Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Trip Customer"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-12 12:53:41.640261",
+ "modified": "2025-06-12 15:52:00.657318",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip",

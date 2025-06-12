@@ -1,7 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "format:TRCM{####}",
+ "autoname": "hash",
  "creation": "2025-06-12 10:35:15.170523",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -18,11 +17,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-12 12:54:20.651098",
+ "modified": "2025-06-12 15:48:11.190566",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip Company",
- "naming_rule": "Expression",
+ "naming_rule": "Random",
  "owner": "Administrator",
  "permissions": [
   {
