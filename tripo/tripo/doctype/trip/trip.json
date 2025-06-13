@@ -57,9 +57,11 @@
   {
    "fieldname": "trip_company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Trip Company",
    "options": "Trip Company",
-   "permlevel": 1
+   "permlevel": 1,
+   "reqd": 1
   },
   {
    "fetch_from": "trip_company.trip_company_name",
@@ -171,7 +173,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-13 14:25:44.710798",
+ "modified": "2025-06-13 14:42:11.334750",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip",

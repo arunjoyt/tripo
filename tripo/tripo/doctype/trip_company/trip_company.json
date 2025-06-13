@@ -11,13 +11,15 @@
   {
    "fieldname": "trip_company_name",
    "fieldtype": "Data",
-   "label": "Trip Company Name"
+   "in_list_view": 1,
+   "label": "Trip Company Name",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-12 17:24:57.748434",
+ "modified": "2025-06-13 14:42:49.468671",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip Company",

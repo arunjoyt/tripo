@@ -30,7 +30,8 @@
    "fieldtype": "Link",
    "label": "Trip Company",
    "options": "Trip Company",
-   "permlevel": 1
+   "permlevel": 1,
+   "reqd": 1
   },
   {
    "fetch_from": "trip_company.trip_company_name",
@@ -50,7 +51,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-13 14:23:26.306808",
+ "modified": "2025-06-13 14:42:34.336661",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip Customer",
