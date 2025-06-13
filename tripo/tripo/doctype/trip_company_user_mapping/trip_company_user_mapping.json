@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{trip_company_name}-{user}",
  "creation": "2025-06-12 17:48:33.587813",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -20,7 +21,8 @@
    "fieldname": "user",
    "fieldtype": "Link",
    "label": "User",
-   "options": "User"
+   "options": "User",
+   "unique": 1
   },
   {
    "fetch_from": "trip_company.trip_company_name",
@@ -33,10 +35,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-12 17:51:28.408862",
+ "modified": "2025-06-13 10:43:42.213996",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip Company User Mapping",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
