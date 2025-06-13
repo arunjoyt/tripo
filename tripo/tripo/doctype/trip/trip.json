@@ -17,11 +17,17 @@
   "trip_status",
   "trip_driver",
   "trip_driver_name",
+  "trip_distance_km",
+  "trip_charge",
   "trip_summary",
   "comments",
   "trip_company",
   "trip_company_name",
-  "amended_from"
+  "amended_from",
+  "payments_section",
+  "amount",
+  "paid_date",
+  "mode_of_payment"
  ],
  "fields": [
   {
@@ -125,13 +131,45 @@
    "fieldname": "comments",
    "fieldtype": "Small Text",
    "label": "Comments"
+  },
+  {
+   "fieldname": "trip_charge",
+   "fieldtype": "Currency",
+   "label": "Trip Charge",
+   "precision": "2"
+  },
+  {
+   "fieldname": "trip_distance_km",
+   "fieldtype": "Data",
+   "label": "Trip Distance (km)"
+  },
+  {
+   "fieldname": "payments_section",
+   "fieldtype": "Section Break",
+   "label": "Payments"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "paid_date",
+   "fieldtype": "Date",
+   "label": "Paid Date"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Select",
+   "label": "Mode of Payment",
+   "options": "Cash\nUPI"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-12 17:27:45.100349",
+ "modified": "2025-06-13 11:10:30.570234",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip",
