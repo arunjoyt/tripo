@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"5xjBfNGB7i\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Company\",\"col\":3}},{\"id\":\"DOYp3-Dh_y\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Customer\",\"col\":3}},{\"id\":\"sdkw9aJTN3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Driver\",\"col\":3}},{\"id\":\"_sxOOCjc4D\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip\",\"col\":3}},{\"id\":\"1nvN2nd3BG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Company User Mapping\",\"col\":3}},{\"id\":\"twcW8LC3Vd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"User Permission\",\"col\":3}}]",
+ "content": "[{\"id\":\"_sxOOCjc4D\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip\",\"col\":3}},{\"id\":\"DOYp3-Dh_y\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Customer\",\"col\":3}},{\"id\":\"sdkw9aJTN3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Driver\",\"col\":3}}]",
  "creation": "2025-06-12 10:25:23.061770",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Tripo",
  "links": [],
- "modified": "2025-06-13 11:37:15.957895",
+ "modified": "2025-06-13 14:37:53.668667",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Tripo",
@@ -22,33 +22,16 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "Trip Coordinator"
+  },
+  {
+   "role": "Trip Manager"
+  }
+ ],
  "sequence_id": 1.0,
  "shortcuts": [
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "User Permission",
-   "link_to": "User Permission",
-   "stats_filter": "[]",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Trip Company User Mapping",
-   "link_to": "Trip Company User Mapping",
-   "stats_filter": "[]",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Trip Company",
-   "link_to": "Trip Company",
-   "stats_filter": "[]",
-   "type": "DocType"
-  },
   {
    "color": "Grey",
    "doc_view": "List",

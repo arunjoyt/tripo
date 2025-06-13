@@ -1,0 +1,66 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"B7n1kEIiyP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Company\",\"col\":3}},{\"id\":\"rtJDhl7ofx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trip Company User Mapping\",\"col\":3}},{\"id\":\"ThqenRAB0K\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"User\",\"col\":3}},{\"id\":\"EDhm4Y2mBP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"User Permission\",\"col\":3}}]",
+ "creation": "2025-06-13 14:31:25.579391",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "up-arrow",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Tripo Admin",
+ "links": [],
+ "modified": "2025-06-13 14:37:14.210928",
+ "modified_by": "Administrator",
+ "module": "Tripo",
+ "name": "Tripo Admin",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Trip Company",
+   "link_to": "Trip Company",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Trip Company User Mapping",
+   "link_to": "Trip Company User Mapping",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "User",
+   "link_to": "User",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "User Permission",
+   "link_to": "User Permission",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Tripo Admin"
+}
