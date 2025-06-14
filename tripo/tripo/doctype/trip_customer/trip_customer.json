@@ -43,6 +43,7 @@
   },
   {
    "allow_in_quick_entry": 1,
+   "default": "+91-",
    "fieldname": "customer_phone",
    "fieldtype": "Phone",
    "label": "Customer Phone"
@@ -56,7 +57,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-14 10:27:48.617152",
+ "modified": "2025-06-14 11:38:27.415711",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip Customer",
