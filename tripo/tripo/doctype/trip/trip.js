@@ -5,13 +5,19 @@ frappe.ui.form.on('Trip', {
 
     customer(frm) { frm.trigger('generate_summary'); },
     customer_name(frm) { frm.trigger('generate_summary'); },
+    customer_address(frm) { frm.trigger('generate_summary'); },
     round_trip__one_way(frm) { frm.trigger('generate_summary'); },
     pickup_location(frm) { frm.trigger('generate_summary'); },
+    google_maps_location_pickup(frm) { frm.trigger('generate_summary'); },
     destination(frm) { frm.trigger('generate_summary'); },
+    google_maps_location_destination(frm) { frm.trigger('generate_summary'); },
     trip_date(frm) { frm.trigger('generate_summary'); },
     trip_time(frm) { frm.trigger('generate_summary'); },
+    trip_date_and_time(frm) { frm.trigger('generate_summary'); },
     trip_status(frm) { frm.trigger('generate_summary'); },
     trip_driver(frm) { frm.trigger('generate_summary'); },
+    trip_driver_name(frm) { frm.trigger('generate_summary'); },
+    
 
     generate_summary(frm) {
         const formatDate = (dateStr) => {
@@ -38,15 +44,16 @@ frappe.ui.form.on('Trip', {
 
         let summary_lines = [
             `Customer: ${frm.doc.customer_name || ''}`,
+            `${frm.doc.round_trip__one_way|| ''}`,
             `Pickup Location: ${frm.doc.pickup_location || ''}`,
+            `${frm.doc.google_maps_location_pickup || ''}`,
             `Destination: ${frm.doc.destination || ''}`,
-        ];
-
-        summary_lines.push(
+            `${frm.doc.google_maps_location_destination || ''}`,
             `Trip Date: ${formatDate(frm.doc.trip_date)}`,
-            `Trip Time: ${formatTime(frm.doc.trip_time)}`,
+            `Trip Time: ${frm.doc.trip_time}`,
+            `Trip Status: ${frm.doc.trip_status}`,
             `Driver: ${frm.doc.trip_driver_name || ''}`
-        );
+        ];
 
         let summary_text = summary_lines.join('\n');
 
