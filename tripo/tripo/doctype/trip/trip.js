@@ -5,6 +5,7 @@ frappe.ui.form.on('Trip', {
 
     customer(frm) { frm.trigger('generate_summary'); },
     customer_name(frm) { frm.trigger('generate_summary'); },
+    customer_phone(frm) { frm.trigger('generate_summary'); },
     customer_address(frm) { frm.trigger('generate_summary'); },
     round_trip__one_way(frm) { frm.trigger('generate_summary'); },
     pickup_location(frm) { frm.trigger('generate_summary'); },
@@ -44,6 +45,7 @@ frappe.ui.form.on('Trip', {
 
         let summary_lines = [
             `Customer: ${frm.doc.customer_name || ''}`,
+            `Phone: ${frm.doc.customer_phone || ''}`,
             `${frm.doc.round_trip__one_way|| ''}`,
             `Pickup Location: ${frm.doc.pickup_location || ''}`,
             `${frm.doc.google_maps_location_pickup || ''}`,
@@ -52,7 +54,8 @@ frappe.ui.form.on('Trip', {
             `Trip Date: ${formatDate(frm.doc.trip_date)}`,
             `Trip Time: ${frm.doc.trip_time}`,
             `Trip Status: ${frm.doc.trip_status}`,
-            `Driver: ${frm.doc.trip_driver_name || ''}`
+            `Driver: ${frm.doc.trip_driver_name || ''}`,
+            `Driver Phone: ${frm.doc.driver_phone_1 || ''}`
         ];
 
         let summary_text = summary_lines.join('\n');

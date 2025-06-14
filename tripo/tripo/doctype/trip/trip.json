@@ -8,6 +8,7 @@
   "section_break_wmuv",
   "customer",
   "customer_name",
+  "customer_phone",
   "customer_address",
   "round_trip__one_way",
   "pickup_location",
@@ -20,6 +21,8 @@
   "trip_status",
   "trip_driver",
   "trip_driver_name",
+  "driver_phone_1",
+  "driver_phone_2",
   "trip_distance_km",
   "trip_charge",
   "trip_summary",
@@ -186,13 +189,34 @@
    "fieldtype": "Datetime",
    "label": "Trip Date and Time",
    "read_only": 1
+  },
+  {
+   "fetch_from": "customer.customer_phone",
+   "fieldname": "customer_phone",
+   "fieldtype": "Data",
+   "label": "Customer Phone",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "trip_driver.phone_1",
+   "fieldname": "driver_phone_1",
+   "fieldtype": "Data",
+   "label": "Driver Phone 1",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "trip_driver.phone_2",
+   "fieldname": "driver_phone_2",
+   "fieldtype": "Data",
+   "label": "Driver Phone 2",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-14 12:17:58.504751",
+ "modified": "2025-06-14 12:56:14.216396",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip",
