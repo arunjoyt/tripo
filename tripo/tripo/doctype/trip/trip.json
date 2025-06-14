@@ -16,6 +16,7 @@
   "google_maps_location_destination",
   "trip_date",
   "trip_time",
+  "trip_date_and_time",
   "trip_status",
   "trip_driver",
   "trip_driver_name",
@@ -105,7 +106,7 @@
   },
   {
    "fieldname": "trip_time",
-   "fieldtype": "Time",
+   "fieldtype": "Data",
    "label": "Trip Time"
   },
   {
@@ -178,13 +179,19 @@
    "fieldname": "google_maps_location_destination",
    "fieldtype": "Data",
    "label": "Google Maps Location (Destination)"
+  },
+  {
+   "fieldname": "trip_date_and_time",
+   "fieldtype": "Datetime",
+   "label": "Trip Date and Time",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-14 10:32:21.186407",
+ "modified": "2025-06-14 11:02:32.020736",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip",

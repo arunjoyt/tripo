@@ -62,5 +62,61 @@ frappe.ui.form.on('Trip', {
                     frappe.show_alert('Summary copied to clipboard!');
                 });
             });
+    },
+
+    // Time entry in 12H(AM/PM) format
+    trip_time(frm) {
+        const input = frm.doc.trip_time?.trim();
+        if (!input) {
+            frm.set_value('trip_date_and_time', '');
+            return;
+        }
+
+        const regex = /^(0?[1-9]|1[0-2]):([0-5][0-9])\s?(AM|PM)$/i;
+        const match = input.match(regex);
+
+        if (!match) {
+            // Show alert only if user typed 7+ characters
+            if (input.length >= 7) {
+                frappe.show_alert({
+                    message: __('Invalid time. Use format: hh:mm AM/PM (e.g., 9:45 PM)'),
+                    indicator: 'orange'
+                });
+            }
+            frm.set_value('trip_date_and_time', '');
+            return;
+        }
+
+        let [_, hourStr, minute, ampm] = match;
+        let hour = parseInt(hourStr, 10);
+        ampm = ampm.toUpperCase();
+
+        if (ampm === 'PM' && hour !== 12) hour += 12;
+        if (ampm === 'AM' && hour === 12) hour = 0;
+
+        const datePart = frm.doc.trip_date;
+        if (!datePart) {
+            frappe.show_alert({
+                message: __('Please set the Trip Date before entering time.'),
+                indicator: 'orange'
+            });
+            return;
+        }
+
+        // Build a datetime string: yyyy-mm-dd HH:MM:00
+        const time24 = `${String(hour).padStart(2, '0')}:${minute}:00`;
+        const datetime = `${datePart} ${time24}`;
+
+        frm.set_value('trip_date_and_time', datetime);
+    },
+
+    validate(frm) {
+        const input = frm.doc.trip_time?.trim();
+        if (!input) return;
+
+        const regex = /^(0?[1-9]|1[0-2]):([0-5][0-9])\s?(AM|PM)$/i;
+        if (!regex.test(input)) {
+            frappe.throw(__('Invalid time format in "Trip Time". Use hh:mm AM/PM (e.g., 10:30 PM)'));
+        }
     }
 });
