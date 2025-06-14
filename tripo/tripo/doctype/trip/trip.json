@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "autoname": "hash",
  "creation": "2025-06-12 10:28:08.496121",
  "doctype": "DocType",
@@ -150,8 +151,9 @@
   },
   {
    "fieldname": "trip_distance_km",
-   "fieldtype": "Data",
-   "label": "Trip Distance (km)"
+   "fieldtype": "Float",
+   "label": "Trip Distance (km)",
+   "precision": "2"
   },
   {
    "fieldname": "payments_section",
@@ -216,7 +218,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-14 12:56:14.216396",
+ "modified": "2025-06-14 17:14:52.822230",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip",
@@ -251,6 +253,7 @@
    "create": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,

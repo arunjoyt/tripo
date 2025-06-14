@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "autoname": "hash",
  "creation": "2025-06-12 10:30:36.947458",
  "doctype": "DocType",
@@ -57,7 +58,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-14 11:38:27.415711",
+ "modified": "2025-06-14 17:13:07.623964",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip Customer",
@@ -92,6 +93,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
