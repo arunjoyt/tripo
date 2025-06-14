@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Tripo Admin",
  "links": [],
- "modified": "2025-06-13 14:37:14.210928",
+ "modified": "2025-06-14 14:13:58.627423",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Tripo Admin",
@@ -27,7 +27,7 @@
    "role": "System Manager"
   }
  ],
- "sequence_id": 2.0,
+ "sequence_id": 3.0,
  "shortcuts": [
   {
    "color": "Grey",
