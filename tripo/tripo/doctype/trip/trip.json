@@ -11,7 +11,9 @@
   "customer_address",
   "round_trip__one_way",
   "pickup_location",
+  "google_maps_location_pickup",
   "destination",
+  "google_maps_location_destination",
   "trip_date",
   "trip_time",
   "trip_status",
@@ -166,13 +168,23 @@
    "fieldtype": "Select",
    "label": "Mode of Payment",
    "options": "Cash\nUPI"
+  },
+  {
+   "fieldname": "google_maps_location_pickup",
+   "fieldtype": "Data",
+   "label": "Google Maps Location (Pickup)"
+  },
+  {
+   "fieldname": "google_maps_location_destination",
+   "fieldtype": "Data",
+   "label": "Google Maps Location (Destination)"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-13 14:54:44.457421",
+ "modified": "2025-06-14 10:32:21.186407",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip",
