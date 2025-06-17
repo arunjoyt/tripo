@@ -128,5 +128,15 @@ frappe.ui.form.on('Trip', {
         if (!regex.test(input)) {
             frappe.throw(__('Invalid time format in "Trip Time". Use hh:mm AM/PM (e.g., 10:30 PM)'));
         }
+    },
+
+    customer_whatsapp(frm) {
+        if (!frm.doc.customer_phone) {
+            frappe.msgprint(__('Customer phone is not set.'));
+            return;
+        }
+        const phone = frm.doc.customer_phone?.replace(/\D/g, '');
+        const wa_url = `https://wa.me/${phone}`;
+        window.open(wa_url, '_blank');
     }
 });

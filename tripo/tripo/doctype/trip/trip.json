@@ -6,10 +6,13 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_wmuv",
+  "customer_details_section",
   "customer",
   "customer_name",
+  "column_break_fcip",
   "customer_phone",
+  "customer_whatsapp",
+  "section_break_wmuv",
   "customer_address",
   "round_trip__one_way",
   "pickup_location",
@@ -212,13 +215,28 @@
    "fieldtype": "Data",
    "label": "Driver Phone 2",
    "read_only": 1
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "column_break_fcip",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.customer_phone",
+   "fieldname": "customer_whatsapp",
+   "fieldtype": "Button",
+   "label": "WhatsApp"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-14 17:14:52.822230",
+ "modified": "2025-06-17 15:42:18.176162",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip",
