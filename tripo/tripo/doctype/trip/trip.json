@@ -59,11 +59,13 @@
   {
    "fieldname": "pickup_location",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Pickup Location"
   },
   {
    "fieldname": "destination",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Destination"
   },
   {
@@ -92,6 +94,7 @@
    "fetch_from": "customer.customer_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Customer Name",
    "read_only": 1
   },
@@ -122,6 +125,7 @@
   {
    "fieldname": "trip_status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Trip Status",
    "options": "Booked\nCompleted\nCancelled"
   },
@@ -135,6 +139,7 @@
    "fetch_from": "trip_driver.driver_name",
    "fieldname": "trip_driver_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Trip Driver Name",
    "read_only": 1
   },
@@ -190,6 +195,7 @@
   {
    "fieldname": "trip_date_and_time",
    "fieldtype": "Datetime",
+   "in_list_view": 1,
    "label": "Trip Date and Time",
    "read_only": 1
   },
@@ -253,7 +259,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-18 14:03:57.670723",
+ "modified": "2025-06-18 15:53:06.014377",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip",
