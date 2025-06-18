@@ -138,5 +138,15 @@ frappe.ui.form.on('Trip', {
         const phone = frm.doc.customer_phone?.replace(/\D/g, '');
         const wa_url = `https://wa.me/${phone}`;
         window.open(wa_url, '_blank');
-    }
+    },
+
+    // calculate to_be_paid
+    trip_charge(frm) { 
+        const to_be_paid = (frm.doc.trip_charge || 0) - (frm.doc.paid_amount || 0)
+        frm.set_value('to_be_paid', to_be_paid);
+    },
+    paid_amount(frm) { 
+        const to_be_paid = (frm.doc.trip_charge || 0) - (frm.doc.paid_amount || 0)
+        frm.set_value('to_be_paid', to_be_paid);
+    },
 });

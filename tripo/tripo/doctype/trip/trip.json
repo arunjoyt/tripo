@@ -36,6 +36,7 @@
   "amended_from",
   "payments_section",
   "paid_amount",
+  "to_be_paid",
   "paid_date",
   "mode_of_payment",
   "payment_comments"
@@ -239,13 +240,20 @@
    "fieldname": "payment_comments",
    "fieldtype": "Small Text",
    "label": "Payment Comments"
+  },
+  {
+   "fieldname": "to_be_paid",
+   "fieldtype": "Float",
+   "label": "To Be Paid",
+   "precision": "2",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-18 12:25:05.236801",
+ "modified": "2025-06-18 14:03:57.670723",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip",
