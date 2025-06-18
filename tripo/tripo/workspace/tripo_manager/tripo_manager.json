@@ -5,7 +5,7 @@
    "label": "Completed Trips"
   }
  ],
- "content": "[{\"id\":\"B188kI63b4\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Trips\",\"col\":3}},{\"id\":\"QPNbfHst-j\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Open Trips\",\"col\":3}},{\"id\":\"YtVpcrsdC3\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Completed Trips\",\"col\":3}},{\"id\":\"glIrWf-PXN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Cancelled Trips\",\"col\":3}},{\"id\":\"MJMib_jYTh\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Completed Trips\",\"col\":12}}]",
+ "content": "[{\"id\":\"B188kI63b4\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Trips\",\"col\":3}},{\"id\":\"QPNbfHst-j\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Open Trips\",\"col\":3}},{\"id\":\"YtVpcrsdC3\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Completed Trips\",\"col\":3}},{\"id\":\"glIrWf-PXN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Cancelled Trips\",\"col\":3}},{\"id\":\"qhfTIJIIYp\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Trip Charges\",\"col\":6}},{\"id\":\"hqQ6-RA3Qd\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Paid Amount\",\"col\":6}},{\"id\":\"MJMib_jYTh\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Completed Trips\",\"col\":12}}]",
  "creation": "2025-06-14 14:43:31.368408",
  "custom_blocks": [],
  "docstatus": 0,
@@ -18,7 +18,7 @@
  "is_hidden": 0,
  "label": "Tripo Manager",
  "links": [],
- "modified": "2025-06-18 10:39:02.320784",
+ "modified": "2025-06-18 12:31:52.450225",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Tripo Manager",
@@ -28,8 +28,16 @@
    "number_card_name": "Total Cancelled Trips"
   },
   {
+   "label": "Total Trip Charges",
+   "number_card_name": "Total Trip Charges"
+  },
+  {
    "label": "Total Open Trips",
    "number_card_name": "Total Open Trips"
+  },
+  {
+   "label": "Total Paid Amount",
+   "number_card_name": "Total Paid Amount"
   },
   {
    "label": "Total Trips",

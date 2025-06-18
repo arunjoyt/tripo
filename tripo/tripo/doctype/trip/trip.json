@@ -35,9 +35,10 @@
   "trip_company_name",
   "amended_from",
   "payments_section",
-  "amount",
+  "paid_amount",
   "paid_date",
-  "mode_of_payment"
+  "mode_of_payment",
+  "payment_comments"
  ],
  "fields": [
   {
@@ -148,7 +149,7 @@
   },
   {
    "fieldname": "trip_charge",
-   "fieldtype": "Currency",
+   "fieldtype": "Float",
    "label": "Trip Charge",
    "precision": "2"
   },
@@ -156,17 +157,13 @@
    "fieldname": "trip_distance_km",
    "fieldtype": "Float",
    "label": "Trip Distance (km)",
+   "non_negative": 1,
    "precision": "2"
   },
   {
    "fieldname": "payments_section",
    "fieldtype": "Section Break",
    "label": "Payments"
-  },
-  {
-   "fieldname": "amount",
-   "fieldtype": "Currency",
-   "label": "Amount"
   },
   {
    "fieldname": "paid_date",
@@ -230,13 +227,25 @@
    "fieldname": "customer_whatsapp",
    "fieldtype": "Button",
    "label": "WhatsApp"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Float",
+   "label": "Paid Amount",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "payment_comments",
+   "fieldtype": "Small Text",
+   "label": "Payment Comments"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-17 15:42:18.176162",
+ "modified": "2025-06-18 12:25:05.236801",
  "modified_by": "Administrator",
  "module": "Tripo",
  "name": "Trip",
