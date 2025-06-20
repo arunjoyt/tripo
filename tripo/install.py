@@ -1,7 +1,11 @@
 import frappe
 from frappe.utils.password import update_password
 import logging
-
+"""
+How to run the script?
+bench --site <site_name> execute tripo.install.create_initial_data
+Make sure to run the script after initial account setup from Frappe UI
+"""
 
 def create_initial_data():
     logger = frappe.logger("tripo_setup")
